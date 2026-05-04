@@ -1,0 +1,256 @@
+.account-page {
+  --account-main: #245633;
+  --account-accent: #d4af37;
+  --account-soft: #eef6f0;
+  min-height: 100vh;
+  background: #f6f3ee;
+}
+
+.account-silver {
+  --account-main: #6f7782;
+  --account-accent: #c0c7d1;
+  --account-soft: #eef1f5;
+}
+
+.account-gold {
+  --account-main: #9a6a00;
+  --account-accent: #d4af37;
+  --account-soft: #fff4c6;
+}
+
+.account-platinum {
+  --account-main: #4b2c83;
+  --account-accent: #d4af37;
+  --account-soft: #f1e6ff;
+}
+
+.account-main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 42px 18px 56px;
+}
+
+.account-hero {
+  background: linear-gradient(135deg, var(--account-main), #173f27);
+  color: #fff;
+  border-radius: 28px;
+  padding: 34px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 18px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+  margin-bottom: 22px;
+}
+
+.account-kicker,
+.account-card-label {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  color: var(--account-accent);
+  margin-bottom: 8px;
+}
+
+.account-hero h1 {
+  margin: 0;
+  font-size: 42px;
+  line-height: 1.08;
+  font-weight: 1000;
+}
+
+.account-hero p {
+  margin: 10px 0 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.account-logout-btn,
+.account-primary-link,
+.empty-box a,
+.account-actions-row a {
+  border: none;
+  text-decoration: none;
+  background: var(--account-accent);
+  color: #171717;
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: 900;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.account-grid,
+.account-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.account-profile-card,
+.account-membership-card,
+.account-card {
+  background: #fff;
+  border: 1px solid #eadfd2;
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+.account-profile-card {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.profile-avatar {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: var(--account-soft);
+  border: 2px solid var(--account-accent);
+  color: var(--account-main);
+  display: grid;
+  place-items: center;
+  font-size: 34px;
+  font-weight: 1000;
+  flex: 0 0 auto;
+}
+
+.account-profile-card h2,
+.account-membership-card h2,
+.account-card h3 {
+  margin: 0 0 8px;
+  color: #171717;
+  font-weight: 1000;
+}
+
+.account-profile-card p,
+.account-membership-card p,
+.address-box p,
+.empty-box p {
+  margin: 5px 0;
+  color: #6b6258;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.account-profile-card span,
+.membership-meta span,
+.address-box span {
+  display: block;
+  color: var(--account-main);
+  font-weight: 800;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.membership-meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.membership-meta span {
+  background: var(--account-soft);
+  padding: 8px 10px;
+  border-radius: 999px;
+}
+
+.account-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.account-card-head a {
+  text-decoration: none;
+  color: var(--account-main);
+  font-weight: 900;
+  font-size: 13px;
+}
+
+.address-box,
+.empty-box {
+  background: #faf8f4;
+  border: 1px solid #efe7db;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.address-box strong {
+  display: block;
+  color: #171717;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.recent-orders {
+  display: grid;
+  gap: 10px;
+}
+
+.recent-order-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 10px;
+  align-items: center;
+  background: #faf8f4;
+  border: 1px solid #efe7db;
+  border-radius: 14px;
+  padding: 13px;
+  text-decoration: none;
+  color: #171717;
+}
+
+.recent-order-row span {
+  color: var(--account-main);
+  font-weight: 900;
+}
+
+.recent-order-row em {
+  font-style: normal;
+  background: var(--account-soft);
+  color: var(--account-main);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.account-actions-row {
+  background: #fff;
+  border: 1px solid #eadfd2;
+  border-radius: 20px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+@media (max-width: 900px) {
+  .account-hero,
+  .account-grid,
+  .account-info-grid,
+  .account-actions-row {
+    grid-template-columns: 1fr;
+  }
+
+  .account-hero {
+    display: grid;
+  }
+
+  .account-hero h1 {
+    font-size: 34px;
+  }
+}

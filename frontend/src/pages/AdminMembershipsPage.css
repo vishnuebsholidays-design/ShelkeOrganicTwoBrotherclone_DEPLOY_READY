@@ -1,0 +1,42 @@
+/* Admin memberships now uses shared AdminLayout.css for consistent compact UI. */
+
+.membership-top-action {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: -8px 0 14px;
+}
+
+.membership-plan-action-btn {
+  min-width: 170px;
+  min-height: 44px;
+  border-radius: 12px;
+  background: #0f5132;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 900;
+  padding: 0 18px;
+  white-space: nowrap;
+  border: 1px solid #0f5132;
+  box-shadow: 0 8px 18px rgba(15, 81, 50, 0.14);
+}
+
+.membership-plan-action-btn:hover {
+  background: #0b3f26;
+}
+
+@media (max-width: 700px) {
+  .membership-top-action {
+    justify-content: stretch;
+    margin-top: 0;
+  }
+
+  .membership-plan-action-btn {
+    width: 100%;
+  }
+}
